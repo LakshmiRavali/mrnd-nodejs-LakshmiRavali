@@ -18,7 +18,7 @@ describe("JSIntro Test Suite", function(){
 
 	});
 
-	describe("JSIntro-SumOfArray", function(){
+describe("JSIntro-SumOfArray", function(){
 
 		it("sum of 2 and 3 is 5", function(){
 
@@ -28,7 +28,7 @@ describe("JSIntro Test Suite", function(){
 
 	});
 
-	describe("JSIntro-SumOfUniqueNumbers", function(){
+describe("JSIntro-SumOfUniqueNumbers", function(){
 
 		it("sum of 2,3,3,2 is 5", function(){
 
@@ -66,5 +66,34 @@ describe("JSIntro Test Suite", function(){
 			var str = JSIntro.ReverseString("a");
 			expect(str).toEqual("a");
 		});
+	    
+	
 	});
+	
+	describe("JSIntro-ReverseArrayOfStrings", function(){
+
+		it("[abc,bcd,cde] reversed is [cde,bcd,abc]", function(){
+
+			var str = JSIntro.ReverseArrayOfStrings(["abc","bcd","cde"]);
+			expect(str).toEqual(["cde","bcd","abc"]);
+		});
+
+		it("[hai,hello,welcome,how] reversed is [how,welcome,hello,hai]", function(){
+
+			var str = JSIntro.ReverseArrayOfStrings(["hai","hello","welcome","how"]);
+			expect(str).toEqual(["how","welcome","hello","hai"]);
+		});
+
+		it("[a] reversed is [a]", function(){
+
+			var str = JSIntro.ReverseArrayOfStrings(["a"]);
+			expect(str).toEqual(["a"]);
+		});
+	    
+	
+	});
+	
 });
+
+
+
